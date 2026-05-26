@@ -1,49 +1,51 @@
 # FaceEnhancer
 
-AI-assisted face enhancement and restoration pipeline built using C++ and OpenCV.
+Face enhancement and restoration pipeline built using C++ and OpenCV.
 
-This project detects faces, applies multiple image enhancement techniques, and generates improved outputs with side-by-side visual comparisons.
-
----
-
-## Demo Video
-
-https://github.com/atulsharma47/FaceEnhancer/raw/main/assets/demo.mp4
+This project improves facial image quality using denoising, contrast enhancement, sharpening, and seamless blending techniques while generating visual before-and-after comparisons.
 
 ---
 
-## Sample Results
+## Demo
 
-### Before vs Enhanced
+🎥 [Watch Demo Video](https://github.com/atulsharma47/FaceEnhancer/raw/main/assets/demo.mp4)
+
+---
+
+## Preview
+
+### Before vs Enhanced Output
 
 <p align="center">
-  <img src="assets/paired_face-8-DSC_6181.JPG.png" width="700"/>
+  <img src="assets/paired_face-8-DSC_6181.JPG.png" width="500"/>
 </p>
 
 ---
 
-## Features
+## Key Features
 
 - Face detection using Haar Cascades
-- Image denoising
-- Contrast enhancement using CLAHE
-- Sharpening and detail enhancement
+- Noise reduction and image cleanup
+- CLAHE-based contrast enhancement
+- Sharpening and detail improvement
 - Seamless face blending
-- Batch image processing
-- Before/after comparison generation
-- Demo video generation
+- Batch image enhancement
+- Before-and-after comparison generation
+- Automated demo video creation
 
 ---
 
 ## Tech Stack
 
-- C++
-- OpenCV
-- CMake
+| Technology | Purpose |
+|---|---|
+| C++ | Core application logic |
+| OpenCV | Image processing and computer vision |
+| CMake | Build configuration |
 
 ---
 
-## Processing Pipeline
+## Enhancement Pipeline
 
 ```text
 Input Image
@@ -54,7 +56,7 @@ Noise Reduction
    ↓
 Contrast Enhancement
    ↓
-Sharpening
+Detail Sharpening
    ↓
 Seamless Blending
    ↓
@@ -92,9 +94,14 @@ FaceEnhancer/
 
 ## How It Works
 
-The application scans input images, detects facial regions using OpenCV Haar Cascades, and applies multiple enhancement operations including denoising, contrast improvement, sharpening, and blending.
+The application processes facial images through multiple enhancement stages:
 
-Enhanced outputs are saved automatically along with paired comparison images.
+1. Detects facial regions using OpenCV Haar Cascades
+2. Applies denoising to reduce image artifacts
+3. Enhances contrast using CLAHE
+4. Sharpens facial details
+5. Blends enhanced regions seamlessly into the original image
+6. Generates paired comparison outputs automatically
 
 ---
 
@@ -119,13 +126,13 @@ Run the executable:
 FaceEnhancer.exe
 ```
 
-Input images should be placed inside:
+Place input images inside:
 
 ```text
 images/
 ```
 
-Enhanced outputs are generated inside:
+Enhanced results are generated inside:
 
 ```text
 output/
@@ -136,11 +143,11 @@ output/
 ## Example Outputs
 
 <p align="center">
-  <img src="assets/paired_face-11-DSC_6050.JPG.png" width="700"/>
+  <img src="assets/paired_face-11-DSC_6050.JPG.png" width="500"/>
 </p>
 
 <p align="center">
-  <img src="assets/paired_face-9-DSC_6051.JPG.png" width="700"/>
+  <img src="assets/paired_face-9-DSC_6051.JPG.png" width="500"/>
 </p>
 
 ---
@@ -148,10 +155,10 @@ output/
 ## Future Improvements
 
 - Real-time webcam enhancement
-- Deep learning-based face restoration
 - GPU acceleration
-- GUI application support
+- Deep learning-based restoration
 - Video enhancement pipeline
+- Desktop GUI application
 
 ---
 
